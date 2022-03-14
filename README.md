@@ -1,6 +1,6 @@
 # BFGC mobile app 
 
-## 0 - Table of Content <a id="toc"></a>
+## 0 - Table of Contents <a id="toc"></a>
 
 1. <a href="#1">Requirements</a>
 
