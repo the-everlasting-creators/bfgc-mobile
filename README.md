@@ -12,4 +12,3 @@
 
 - Node.js 16.14.0 (LTS)
 - React Native (0.67)
-- MongoDB
