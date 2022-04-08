@@ -1,8 +1,8 @@
 {
   "devToolsPort": 19002,
-  "expoServerPort": 19000,
+  "expoServerPort": null,
   "packagerPort": 19000,
   "expoServerNgrokUrl": "https://uw-hu5.anonymous.bfgc-mobile.exp.direct",
   "packagerNgrokUrl": "https://uw-hu5.anonymous.bfgc-mobile.exp.direct",
-  "ngrokPid": 31506
+  "ngrokPid": 42213
 }
