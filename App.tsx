@@ -4,12 +4,12 @@ import { NavigationContainer } from "@react-navigation/native";
 import { Text } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import HomeScreen from "./screens/HomeScreen";
+import MenuScreen from "./screens/MenuScreen";
 import JuboScreen from "./screens/JuboScreen";
 import NewsScreen from "./screens/NewsScreen";
 
 export type RootStackParamList = {
-  Home: undefined;
+  Menu: undefined;
   Jubo: undefined;
   News: undefined;
 };
@@ -20,11 +20,11 @@ export default function App() {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Home">
+        <Stack.Navigator initialRouteName="Menu">
           <Stack.Screen
-            name="Home"
-            component={HomeScreen}
-            options={{ title: "Hoem" }}
+            name="Menu"
+            component={MenuScreen}
+            options={{ title: "Menu" }}
           />
           <Stack.Screen name="Jubo" component={JuboScreen} />
           <Stack.Screen name="News" component={NewsScreen} />
