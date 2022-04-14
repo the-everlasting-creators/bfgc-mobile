@@ -4,27 +4,27 @@ import { NavigationContainer } from "@react-navigation/native";
 import { Text } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-import MenuScreen from "./screens/MenuScreen";
+import MainScreen from "./screens/MainScreen";
 import JuboScreen from "./screens/JuboScreen";
 import NewsScreen from "./screens/NewsScreen";
 
 export type RootStackParamList = {
-  Menu: undefined;
+  Main: undefined;
   Jubo: undefined;
   News: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-export default function App() {
+const App = () => {
   return (
     <SafeAreaProvider>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName="Menu">
+        <Stack.Navigator initialRouteName="Main">
           <Stack.Screen
-            name="Menu"
-            component={MenuScreen}
-            options={{ title: "Menu" }}
+            name="Main"
+            component={MainScreen}
+            options={{ title: "브리즈번 순복음 교회" }}
           />
           <Stack.Screen name="Jubo" component={JuboScreen} />
           <Stack.Screen name="News" component={NewsScreen} />
@@ -32,4 +32,6 @@ export default function App() {
       </NavigationContainer>
     </SafeAreaProvider>
   );
-}
+};
+
+export default App;
